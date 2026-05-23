@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Altra Software Solutions</title>
+  <meta name="description" content="Get in touch with Altra for a free consultation. Contact us via email, phone, or visit our office. We respond within 24 hours.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://altra.dev/contact.html">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Loading -->
+  <div class="loading-overlay" id="loading">
+    <div class="spinner"></div>
+    <p class="loading-text">Loading...</p>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Altra home">
+        <div class="logo-icon">A</div>
+        <span>Altra</span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label" style="justify-content:center; margin-bottom:24px">Get In Touch</span>
+      <h1>Let's Build Something<br><span class="gradient" style="background:linear-gradient(135deg,#60a5fa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Great Together</span></h1>
+      <p>Have a project in mind? Drop us a message and we'll respond within 24 hours with a tailored plan.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Contact Info -->
+        <div class="contact-info reveal">
+          <h2>Get In Touch</h2>
+          <p>We'd love to hear about your project. Reach out through any channel below and our team will get back to you promptly.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">&#9993;</div>
+              <div class="contact-item-content">
+                <h4>Email Us</h4>
+                <p>hello@altra.dev</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#128222;</div>
+              <div class="contact-item-content">
+                <h4>Call Us</h4>
+                <p>+1 (555) 342-0187</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#128205;</div>
+              <div class="contact-item-content">
+                <h4>Office Location</h4>
+                <p>350 Tech Tower, 5th Floor<br>San Francisco, CA 94102</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#9202;</div>
+              <div class="contact-item-content">
+                <h4>Business Hours</h4>
+                <p>Mon – Fri: 9:00 AM – 6:00 PM PST<br>Sat &amp; Sun: By Appointment</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">&#120143;</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">&#128187;</a>
+            <a href="#" aria-label="YouTube">&#127909;</a>
+            <a href="#" aria-label="Dribbble">&#129344;</a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="reveal">
+          <div class="contact-form-wrap">
+            <h3>Send Us a Message</h3>
+            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name <span class="required">*</span></label>
+                  <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                  <p class="form-error" id="firstNameError">Please enter your first name.</p>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name <span class="required">*</span></label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                  <p class="form-error" id="lastNameError">Please enter your last name.</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                  <p class="form-error" id="emailError">Please enter a valid email address.</p>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="service">Service of Interest <span class="required">*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="custom">Custom Software Development</option>
+                  <option value="web">Web Application Development</option>
+                  <option value="mobile">Mobile App Development</option>
+                  <option value="cloud">Cloud Solutions</option>
+                  <option value="api">API Integrations</option>
+                  <option value="automation">Business Automation Systems</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="maintenance">Maintenance &amp; Support</option>
+                  <option value="other">Other</option>
+                </select>
+                <p class="form-error" id="serviceError">Please select a service.</p>
+              </div>
+              <div class="form-group">
+                <label for="budget">Estimated Budget</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select budget range…</option>
+                  <option value="25-50k">$25k – $50k</option>
+                  <option value="50-100k">$50k – $100k</option>
+                  <option value="100-250k">$100k – $250k</option>
+                  <option value="250k+">$250k+</option>
+                  <option value="unsure">Not Sure Yet</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Project Description <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell us about your project, goals, timeline, and any specific requirements…" required></textarea>
+                <p class="form-error" id="messageError">Please enter a project description (min 20 characters).</p>
+              </div>
+              <button type="submit" class="btn btn-primary" id="submitBtn">Send Message <span>→</span></button>
+            </form>
+            <p id="formSuccess" style="display:none; color:var(--success); margin-top:16px; font-weight:600;">&#10003; Message sent successfully! We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <div class="container">
+    <div class="map-section reveal">
+      <span style="font-size:2.5rem">&#127961;</span>
+      <p style="color:var(--gray-500); max-width:400px; text-align:center">Map Placeholder — 350 Tech Tower, 5th Floor, San Francisco, CA 94102</p>
+      <p style="font-size:0.85rem; color:var(--gray-400)">(Integration with Google Maps or Mapbox available on go-live)</p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container" style="max-width:820px">
+      <div class="section-header reveal" style="text-align:center">
+        <span class="section-label" style="justify-content:center">FAQ</span>
+        <h2 class="section-title">Frequently Asked<br>Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>What is your typical project timeline?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>Timelines depend on scope and complexity. A typical MVP takes 8–12 weeks, intermediate projects 12–24 weeks, and large enterprise engagements 6+ months. We provide a detailed timeline estimate during our initial discovery call.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>What technologies do you work with?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>We work across React/Next.js, Vue.js, Angular, Node.js, Python/Django, Java, .NET, Flutter, React Native, AWS, Azure, GCP, Docker, Kubernetes, PostgreSQL, MongoDB, GraphQL, and more. We select the right stack for each project.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Do you offer ongoing maintenance and support?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>Yes — every engagement includes a maintenance and support phase. We offer SLA-backed support packages including 24/7 monitoring, security patching, performance tuning, and roadmap-driven feature development.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>How do you handle project pricing?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>We offer both fixed-price (for well-scoped projects) and time-and-materials engagement models. Pricing is transparent and itemized — you'll know exactly what you're paying for at every step.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Do you sign NDAs and IP agreements?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>Absolutely. We have standard NDA and IP assignment documents ready to execute before any engagement begins. All intellectual property belongs to the client.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Can you work with our existing team?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>We frequently augment internal teams, work alongside in-house developers, or lead entirely standalone projects. Our flexible engagement model adapts to your team's structure and process.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS HOURS -->
+  <section class="hours-section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center">
+        <span class="section-label" style="justify-content:center">Business Hours</span>
+        <h2 class="section-title">When We're Available</h2>
+      </div>
+      <div class="hours-grid">
+        <div class="hours-card reveal">
+          <h3>Monday – Friday</h3>
+          <p>9:00 AM – 6:00 PM PST</p>
+        </div>
+        <div class="hours-card reveal">
+          <h3>Saturday &amp; Sunday</h3>
+          <p>By Appointment Only</p>
+        </div>
+        <div class="hours-card reveal">
+          <h3>Emergency Support</h3>
+          <p>24/7 for Contracted Clients</p>
+        </div>
+        <div class="hours-card reveal">
+          <h3>Holidays</h3>
+          <p>Closed on Major US Holidays</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">A</div>
+            <span>Altra</span>
+          </div>
+          <p>Building enterprise-grade software solutions for forward-thinking businesses since 2014.</p>
+          <div class="footer-socials">
+            <a href="#" title="Twitter" aria-label="Twitter">&#120143;</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            <a href="#" title="GitHub" aria-label="GitHub">&#128187;</a>
+            <a href="#" title="YouTube" aria-label="YouTube">&#127909;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Custom Software</a></li>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">API Docs</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Altra Software Solutions. All rights reserved.</p>
+        <p><a href="#" style="color:rgba(255,255,255,0.4)">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" style="color:rgba(255,255,255,0.4)">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget">
+    <button class="chat-btn" id="chatBtn" aria-label="Open chat">&#128172;</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

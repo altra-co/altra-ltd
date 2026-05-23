@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Altra Software Solutions</title>
+  <meta name="description" content="Explore Altra's portfolio of enterprise-grade software projects across web apps, mobile apps, SaaS platforms, and custom enterprise systems.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://altra.dev/portfolio.html">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Loading -->
+  <div class="loading-overlay" id="loading">
+    <div class="spinner"></div>
+    <p class="loading-text">Loading Portfolio...</p>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Altra home">
+        <div class="logo-icon">A</div>
+        <span>Altra</span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label" style="justify-content:center; margin-bottom:24px">Our Work</span>
+      <h1>Selected <span class="gradient" style="background:linear-gradient(135deg,#60a5fa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Projects</span></h1>
+      <p>A selection of enterprise software solutions we've built for clients across industries — every one engineered for performance and impact.</p>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio-section">
+    <div class="container">
+      <div class="portfolio-filters" role="tablist" aria-label="Project categories">
+        <button class="active" data-filter="all" role="tab">All</button>
+        <button data-filter="web" role="tab">Web Apps</button>
+        <button data-filter="mobile" role="tab">Mobile Apps</button>
+        <button data-filter="saas" role="tab">SaaS Platforms</button>
+        <button data-filter="enterprise" role="tab">Enterprise Systems</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-card" data-category="saas">
+          <div class="portfolio-img">
+            <div class="portfolio-img-icon">&#128202;</div>
+            <div class="portfolio-img-label">SaaS Platform</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Nova Analytics Platform</h3>
+            <div class="industry">SaaS</div>
+            <p>Real-time business intelligence and analytics dashboard with advanced forecasting and predictive modeling capabilities.</p>
+            <div class="portfolio-tech">
+              <span>React</span><span>Python</span><span>PostgreSQL</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="enterprise">
+          <div class="portfolio-img" style="background:linear-gradient(135deg, #0f1f38, #2563eb)">
+            <div class="portfolio-img-icon">&#128716;</div>
+            <div class="portfolio-img-label">Enterprise System</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Voss ERP Overhaul</h3>
+            <div class="industry">Logistics</div>
+            <p>Full ERP modernization for a national logistics company, unifying inventory, dispatch, and financial reporting under a single interface.</p>
+            <div class="portfolio-tech">
+              <span>.NET</span><span>SQL Server</span><span>Docker</span><span>Angular</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="mobile">
+          <div class="portfolio-img" style="background:linear-gradient(135deg, #0a1628, #38bdf8)">
+            <div class="portfolio-img-icon">&#127911;</div>
+            <div class="portfolio-img-label">Mobile App</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Solara Health Companion</h3>
+            <div class="industry">HealthTech</div>
+            <p>Patient-facing health management app with telehealth integration, medication reminders, and secure provider messaging.</p>
+            <div class="portfolio-tech">
+              <span>Flutter</span><span>Firebase</span><span>AWS IoT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-img" style="background:linear-gradient(135deg, #0f1f38, #60a5fa)">
+            <div class="portfolio-img-icon">&#127760;</div>
+            <div class="portfolio-img-label">Web App</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Meridian E-Commerce Platform</h3>
+            <div class="industry">Retail</div>
+            <p>Headless e-commerce platform powering a high-growth apparel brand. Handles 50k+ concurrent shoppers with zero downtime.</p>
+            <div class="portfolio-tech">
+              <span>Next.js</span><span>GraphQL</span><span>MongoDB</span><span>Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="saas">
+          <div class="portfolio-img" style="background:linear-gradient(135deg, #152847, #3b82f6)">
+            <div class="portfolio-img-icon">&#128101;</div>
+            <div class="portfolio-img-label">SaaS Platform</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>TeamSync Pro</h3>
+            <div class="industry">B2B Productivity</div>
+            <p>Cross-functional collaboration suite blending project management, real-time document editing, and AI-powered task prioritization.</p>
+            <div class="portfolio-tech">
+              <span>React</span><span>Node.js</span><span>Socket.io</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="enterprise">
+          <div class="portfolio-img" style="background:linear-gradient(135deg, #0a1628, #10b981)">
+            <div class="portfolio-img-icon">&#128186;</div>
+            <div class="portfolio-img-label">Enterprise System</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Atlas Banking Portal</h3>
+            <div class="industry">FinTech</div>
+            <p>Secure digital banking portal with multi-currency accounts, smart money transfers, and real-time fraud detection engine.</p>
+            <div class="portfolio-tech">
+              <span>Java</span><span>Kafka</span><span>Oracle</span><span>Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="mobile">
+          <div class="portfolio-img" style="background:linear-gradient(135deg, #0f1f38, #8b5cf6)">
+            <div class="portfolio-img-icon">&#128663;</div>
+            <div class="portfolio-img-label">Mobile App</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Tranzit Fleet Manager</h3>
+            <div class="industry">Transport</div>
+            <p>Offline-capable fleet tracking and dispatch mobile app with route optimization, driver scoring, and admin command center.</p>
+            <div class="portfolio-tech">
+              <span>React Native</span><span>GraphQL</span><span>Maps API</span><span>Offline DB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-img" style="background:linear-gradient(135deg, #0a1628, #f59e0b)">
+            <div class="portfolio-img-icon">&#127800;</div>
+            <div class="portfolio-img-label">Web App</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Evergreen CRM</h3>
+            <div class="industry">Real Estate</div>
+            <p>Intelligent CRM for a real estate network of 2,000+ agents, with lead scoring, automated follow-ups, and commission reporting.</p>
+            <div class="portfolio-tech">
+              <span>Vue.js</span><span>Laravel</span><span>MySQL</span><span>Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="saas">
+          <div class="portfolio-img" style="background:linear-gradient(135deg, #0f1f38, #ec4899)">
+            <div class="portfolio-img-icon">&#127919;</div>
+            <div class="portfolio-img-label">SaaS Platform</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Aura Learning Platform</h3>
+            <div class="industry">EdTech</div>
+            <p>AI-driven education SaaS with adaptive learning paths, auto-grading, live video classrooms, and parental dashboards.</p>
+            <div class="portfolio-tech">
+              <span>Next.js</span><span>Python</span><span>TensorFlow</span><span>WebRTC</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <div class="modal-header" id="modalImg">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">&#10005;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- dynamic content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">A</div>
+            <span>Altra</span>
+          </div>
+          <p>Building enterprise-grade software solutions for forward-thinking businesses since 2014.</p>
+          <div class="footer-socials">
+            <a href="#" title="Twitter" aria-label="Twitter">&#120143;</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            <a href="#" title="GitHub" aria-label="GitHub">&#128187;</a>
+            <a href="#" title="YouTube" aria-label="YouTube">&#127909;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Custom Software</a></li>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">API Docs</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Altra Software Solutions. All rights reserved.</p>
+        <p><a href="#" style="color:rgba(255,255,255,0.4)">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" style="color:rgba(255,255,255,0.4)">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget">
+    <button class="chat-btn" id="chatBtn" aria-label="Open chat">&#128172;</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
