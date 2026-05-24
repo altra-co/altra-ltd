@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Altra Software Solutions</title>
+  <meta name="description" content="Get in touch with Altra for a free consultation. Contact us via email, phone, or visit our office. We respond within 24 hours.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://altra.dev/contact.html">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+<link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+</head>
+<body>
+
+  <!-- Loading -->
+  <div class="loading-overlay" id="loading">
+    <div class="spinner"></div>
+    <p class="loading-text">Loading...</p>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Altra home">
+
+        <span>Altra</span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label" style="justify-content:center; margin-bottom:24px">Get In Touch</span>
+      <h1>Let's Build Something<br><span class="gradient" style="background:linear-gradient(135deg,#60a5fa,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Great Together</span></h1>
+      <p>Have a project in mind? Drop us a message and we'll respond within 24 hours with a tailored plan.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Contact Info -->
+        <div class="contact-info reveal">
+          <h2>Get In Touch</h2>
+          <p>We'd love to hear about your project. Reach out through any channel below and our team will get back to you promptly.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+
+              <div class="contact-item-content">
+                <h4>Email Us</h4>
+                <p>altra.co.info@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+
+              <div class="contact-item-content">
+                <h4>Call Us</h4>
+                <p>+256 765 179900</p>
+              </div>
+            </div>
+            <div class="contact-item">
+
+              <div class="contact-item-content">
+                <h4>Location</h4>
+                <p>Jinja Road, Kireka<br>Uganda, Kampala</p>
+              </div>
+            </div>
+            <div class="contact-item">
+        
+              <div class="contact-item-content">
+                <h4>Business Hours</h4>
+                <p>Mon – Fri: 9:00 AM – 6:00 PM EAT<br>Always available.</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://x.com/Altra_Co2026" aria-label="Twitter"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAACUCAMAAAC6AgsRAAAAZlBMVEX///8AAADe3t7l5eW1tbXx8fH8/Pzr6+v19fVVVVWoqKjT09OVlZXo6Oju7u74+PjBwcHLy8thYWEsLCwgICCioqJHR0dxcXEPDw+urq6JiYlbW1uAgIA2NjZmZma7u7sYGBhAQEADdEftAAAGV0lEQVR4nO2c4XLiOgyFA5SElAUKSSEthZb3f8l7p10WfcJObMcOO7M5P5vGCFs+OpJlsmzEiBEjRowYMWLEv4x86oZ1v49Ro63c3/w1cUJV9DFvq0Zbery7czPwsAk3b1mHm5et924GvgebN/3CQM2L3+tLN/sm20Dz5iXHefMd4MnNvsprWW7mKQf65T/Eh5uB+zzEvgMH+QgYZFOaDdL4CDDvnUMcA4bIslVtNkjj1XvkV7UEiyD7sk83+xpfF3zh+9UszLy772mFH01vySz1NNS8LDu62edF07OKs/8Zbl5WkKarY/kHmAQPmi6UV/cxT9P0RYRwhmhn9l+oJQkgPuAZo5W3BzkozJmmlXnh8fEK0rT4uvlJPtjPXQbLFfGF8LLCgi4oFnLbyAcHl8G4GpPS6Ut1oCAdCDZgiHbwpDdlXi/5aDHjKMgeLvjVKWW0IPUQzK3gVhXxdsEQ3SH3l/CHyVeY8jGBYkhItSnIbNcaR1fYTx6U1A0O3QgXZIhuY4u1UnzegrQNXJq9WEgSRksw6C9I20BiEFxCF6yssV4R36E/8RGkaSH55gj3F8ueVObtIlv3vxmg6UZwCdXc2fi2Ir59z8TehBVoWmpKqkSTY2lBmsA8TdO7mwNRKRj03JKKLzDl6wR9SMwTXXCig+pc8XJoytyF/IzPebo9YamiJE2vLxPbe5Exgws2Yp5IP6TptMQHKJoW80T6eb49yFUmntI8PU9CKbCcIjJOVamLT3wEZ0O40hR7ZH+lHyVIzzEEaRsUTQumoFL4PU+K+GzRJSJYtpOBgCv5HQFVCbJPJu4MzpMIZ5s7+pkmE6Rt4FYVMq7gZM11CTKiIG2DomnxqaSfkyK+dLyssIIZldiSbWX/tMQHMA8TSqGl7B9SxQwGWU3MjI61f3COrZfbwXkSgkTV9q4IrZCGYsF5EmL1zWTeJYkgbQO36s5WU/hBPQzxAVTTUinc11wfYJ6maSHqp9q8qJm4MxbYI5VVKUgxOCgYzi7CBZGoDBR1DaB4EjWFHCJsH6fKFwAmvqKmsIZYTa2ZrcixVb+sLvgoD9Q0LVyQUzuQsrrHEuFMHiNhatMUNFxgLZHPsEfCDlBjgDQtlMLSZvmwoIg/WctaqYouneAp9tFaUwg+5O0La4l8jqr6eWAJeAMXUqiBmc3yYcGETpbIKVYfxoKsT1biCZRCqrppN1jHkIemYMHyYS7IhbRWVgdNMiWUZhYLyVz5QUphpo7+LraawiAVrDuslXlQCtzdzbB5+jc2hpRSxFsefkboOPCE7nn4gVUpDO6C5qKVpGkGmIFZ0NbHKCQfzxjcOlFSmwey24Cmh6xlqRIzIGoKdEH/hsFg88gsJ0SLxtoqM5RY5WnIpN4yZbfWFE7pz0G+oUpVTy2tMqwpDJKy66O/b7c63P/pB4yBQ+RLivh+JsvercU8IL0LqkrutT7ElqLK1tHYpFYKL2SWW+JGu0VZa4OKYWkaNB5Uf34p0kdrR2NxkQ+S5kuqCbeW2a1qMZWnD3iQsO5b8OhPtWTQeHtNIRkLbhTx6cyR8yQ9DWufTCkoxXcfT0k9wgU3eJDIBTvNazkkJv0kcUElqYyKfYFoUdsOwFIU9z8V8Zn/i4mvtVUmfnF/y54Hawszw5mYZN57cWqb9oDqcm3s359eKl0Q9BM3X9IXGlqiaM5DYuFpUIlx29l8WjJWmKdS1PDhglW8dEQrvo6WDMZo2SqDcY7RDFSKr1NkMpwJTyvAAbHyJaX4HNgfCymvMDICxnFB1ezlkkMw65BpEaa2jqEU1IXOo9OZFWlacjl2d597sL/B42jnFmZOunAJXr/prRTWlFTuLRnWe1Rslenpguqmh0/HCDlJxBvojDamd4C6zOpzlFFgIY8iXsPyXvmSIj6/mMniufA0toD0cEHV5eqb/JM3X5+u+HwHTQc3CCri85dEbledQ4v7SvGdA7jK7Z5pmFJgs8jkFJJ0Td2uOoe4IJP+0J9k2LbUWQUCxCpVZnCr3LPFIgVvF1SKL5zmDYc4Bvim7L2ID3D8RQq/i11K8fWqet71BZrhMwXqQmfP49sXs0Ea7h4+7U98gPGg7g7OKfuK70W4u+H2qy2OzVDq0LmOUIlgxmmFm5vPZ0CUFrT1zAkPOMQeMWLEiBEjRowY8RfhPwUNSPUw/3BKAAAAAElFTkSuQmCC" alt="Twittrer Logo"width="40"></a>
+            <a href="https://www.linkedin.com/in/altra-ltd/" aria-label="LinkedIn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnyeKzVh3Jaip75XUDmBXfMjalRFcxiB_OwA&s" alt="Linkedin Logo"width="40"></a>
+            <a href="https://www.youtube.com/@Altra_Ltd" aria-label="YouTube"><img src="data:image/png;base64,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" alt="YouTube Logo"width="40"></a>
+  
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="reveal">
+          <div class="contact-form-wrap">
+            <h3>Send Us a Message</h3>
+            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name <span class="required">*</span></label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Okello" required>
+                  <p class="form-error" id="firstNameError">Please enter your first name.</p>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name <span class="required">*</span></label>
+                  <input type="text" id="lastName" name="lastName" placeholder="James" required>
+                  <p class="form-error" id="lastNameError">Please enter your last name.</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="okellojames@gmail.com" required>
+                  <p class="form-error" id="emailError">Please enter a valid email address.</p>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+256 700 123456">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="service">Service of Interest <span class="required">*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="custom">Custom Software Development</option>
+                  <option value="web">Web Application Development</option>
+                  <option value="mobile">Mobile App Development</option>
+                  <option value="cloud">ICT Solutions</option>
+                  <option value="automation">Business Automation Systems</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="maintenance">Maintenance &amp; Support</option>
+                  <option value="other">Other</option>
+                </select>
+                <p class="form-error" id="serviceError">Please select a service.</p>
+              </div>
+              <div class="form-group">
+                <label for="budget">Estimated Budget</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select budget range…</option>
+                  <option value="25-50k">UGX 200k – UGX 350k</option>
+                  <option value="50-100k">UGX 480k – UGX 950k</option>
+                  <option value="100-250k">UGX 1.2M – UGX 3.5M</option>
+                  <option value="250k+">UGX 4.0M+</option>
+                  <option value="unsure">Not Sure Yet</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Project Description <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell us about your project, goals, timeline, and any specific requirements…" required></textarea>
+                <p class="form-error" id="messageError">Please enter a project description (min 20 characters).</p>
+              </div>
+              <button type="submit" class="btn btn-primary" id="submitBtn">Send Message <span>→</span></button>
+            </form>
+            <p id="formSuccess" style="display:none; color:var(--success); margin-top:16px; font-weight:600;">&#10003; Message sent successfully! We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- MAP -->
+<div class="container">
+  <div class="map-section reveal">
+    <img 
+      src="altra.png" 
+      alt="Altra Location Map"
+      style="width:100%; max-width:600px; border-radius:12px;"
+    >
+  </div>
+</div>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container" style="max-width:820px">
+      <div class="section-header reveal" style="text-align:center">
+        <span class="section-label" style="justify-content:center">FAQ</span>
+        <h2 class="section-title">Frequently Asked<br>Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>What is your typical project timeline?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>Timelines depend on scope and complexity. Websites are made in less than a week, intermediate projects 2-4 weeks, and large enterprise engagements 1+ months. We provide a detailed timeline estimate during our initial discovery call.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>What technologies do you work with?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>We work across React/Next.js, Vue.js, Angular, Node.js, Python/Django, Java, .NET, Flutter, React Native, AWS, Azure, GCP, Docker, Kubernetes, PostgreSQL, MongoDB, GraphQL, and more. We select the right stack for each project.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Do you offer ongoing maintenance and support?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>Yes — every engagement includes a maintenance and support phase. We offer SLA-backed support packages including 24/7 monitoring, security patching, performance tuning, and roadmap-driven feature development.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>How do you handle project pricing?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>We offer both fixed-price (for well-scoped projects) and time-and-materials engagement models. Pricing is transparent and itemized — you'll know exactly what you're paying for at every step.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Do you sign NDAs and IP agreements?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>Absolutely. We have standard NDA and IP assignment documents ready to execute before any engagement begins. All intellectual property belongs to the client.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+            <span>Can you work with our existing team?</span>
+            <span class="faq-icon">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>We frequently augment internal teams, work alongside in-house developers, or lead entirely standalone projects. Our flexible engagement model adapts to your team's structure and process.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS HOURS -->
+  <section class="hours-section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center">
+        <span class="section-label" style="justify-content:center">Business Hours</span>
+        <h2 class="section-title">When We're Available</h2>
+      </div>
+      <div class="hours-grid">
+        <div class="hours-card reveal">
+          <h3>Monday – Friday</h3>
+          <p>9:00 AM – 6:00 PM EAT</p>
+        </div>
+        <div class="hours-card reveal">
+          <h3>Saturday &amp; Sunday</h3>
+          <p>Appointments Only</p>
+        </div>
+        <div class="hours-card reveal">
+          <h3>Bookings and inquiries</h3>
+          <p>Available 24/7</p>
+        </div>
+        <div class="hours-card reveal">
+          <h3>Holidays</h3>
+          <p>Closed on Major UG Holidays</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+    
+            <span>Altra</span>
+          </div>
+          <p>Building enterprise-grade software solutions for forward-thinking businesses. Custom development, cloud, AI &amp; automation.</p>
+          <div class="footer-socials">
+            <a href="https://x.com/Altra_Co2026" title="Twitter" aria-label="Twitter"><img src="data:image/png;base64,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" alt="Twittrer Logo"width="40"></a>
+            <a href="https://www.linkedin.com/in/altra-ltd/" title="LinkedIn" aria-label="LinkedIn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnyeKzVh3Jaip75XUDmBXfMjalRFcxiB_OwA&s" alt="Linkedin Logo"width="40"></a>
+            <a href="https://www.youtube.com/@Altra_Ltd" title="YouTube" aria-label="YouTube"><img src="data:image/png;base64,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" alt="YouTube Logo"width="40"></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Custom Software</a></li>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">Cloud Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">API Docs</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Altra Software Solutions. All rights reserved.</p>
+        <p><a href="#" style="color:rgba(255,255,255,0.4)">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" style="color:rgba(255,255,255,0.4)">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget">
+    <button class="chat-btn" id="chatBtn" aria-label="Open chat">&#128172;</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
